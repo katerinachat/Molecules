@@ -1,19 +1,29 @@
+from html.parser import HTMLParser
 import requests
 from bs4 import BeautifulSoup
+import pandas as pd
 
 
+def string_combine(strings):
+    combined = ""
+    if isinstance(strings, str):
+        combined = strings
+    else:
+        for string in strings:
+            combined += string + "; "
+    return combined
 
-names = ["neil-stewart"]
+names = []
 with open('ati-names.txt', 'r') as f:
     txt = f.readline()
     while txt:
         names.append(txt.replace('\n', ''))
         txt = f.readline()
 
-Download websites
+# Download websites
 websites = {}
 for name in names:
-    web_page = requests.get('https://www.turing.ac.uk/people/researchers/' + names)
+    web_page = requests.get('https://www.turing.ac.uk/people/researchers/' + name)
     websites[name] = web_page.text
 
 
@@ -45,23 +55,33 @@ for name in names:
                     continue
                 if (header in person_data) is False:
                     person_data[header] = content
-    person_data['full name'] = full_name.text
+    person_data['Full name'] = full_name.text
     processed_dict[name] = person_data
-
     print("processed: " + name)
 
-data = processed_dict[name]
-print(data['full name'])
-
-
+# data = processed_dict[name]
+# print(data['full name'])
 
 
 # convert to dataframe
-topics = ["Research areas", "Bio", "Research interests", "Achievements and awards", "full name"]
+topics = ["Research areas", "Bio", "Research interests", "Achievements and awards", "Full name"]
+data_df_dict = {}
+data_df_dict['Index'] = []
 for name in names:
     data = processed_dict[name]
+    data_df_dict['Index'].append(name)
     for topic in topics:
+        if (topic in data_df_dict) is False:
+            data_df_dict[topic] = []
         if topic in data:
             data_ele = data[topic]
-            print(data_ele)
-        print('-----------------------')
+            combined = string_combine(data_ele)
+            combined = combined.replace(",", ";")
+            combined = combined.replace("\n", "")
+            data_df_dict[topic].append(combined)
+        else:
+            data_df_dict[topic].append(['N/A'])
+data_df = pd.DataFrame(data_df_dict)
+data_df = data_df.sort_values("Index")
+
+data_df.to_csv("extracted data.csv", index=False, encoding='UTF-8')
