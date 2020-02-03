@@ -1,20 +1,19 @@
-from html.parser import HTMLParser
 import requests
 from bs4 import BeautifulSoup
-import pandas
 
 
-names = []
+
+names = ["neil-stewart"]
 with open('ati-names.txt', 'r') as f:
     txt = f.readline()
     while txt:
         names.append(txt.replace('\n', ''))
         txt = f.readline()
 
-# Download websites
+Download websites
 websites = {}
 for name in names:
-    web_page = requests.get('https://www.turing.ac.uk/people/researchers/' + name)
+    web_page = requests.get('https://www.turing.ac.uk/people/researchers/' + names)
     websites[name] = web_page.text
 
 
@@ -24,7 +23,7 @@ for name in names:
     web_page_text = websites[name]
     soup = BeautifulSoup(web_page_text, 'html.parser')
     mydivs = soup.findAll("div", {"class": "container"})
-
+    full_name=mydivs[0].find({"h1"})
     # divs [2] contains what we need
     person_data = {}
     for mydiv in mydivs:
@@ -46,13 +45,23 @@ for name in names:
                     continue
                 if (header in person_data) is False:
                     person_data[header] = content
+    person_data['full name'] = full_name.text
     processed_dict[name] = person_data
+
     print("processed: " + name)
 
+data = processed_dict[name]
+print(data['full name'])
+
+
+
+
 # convert to dataframe
-topics = ["Research areas", "Bio", "Research interests", "Achievements and awards", ""]
+topics = ["Research areas", "Bio", "Research interests", "Achievements and awards", "full name"]
 for name in names:
     data = processed_dict[name]
     for topic in topics:
-        data_ele = data[topic]
-
+        if topic in data:
+            data_ele = data[topic]
+            print(data_ele)
+        print('-----------------------')
