@@ -3,3 +3,6 @@ __pycache__
 data/
 papers/
 papers.zip
+parameters.json
+microsoftgraph.py
+upload_papers.py
