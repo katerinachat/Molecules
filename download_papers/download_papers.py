@@ -1,6 +1,6 @@
 from processes import *
 
-p = ProducerThread(name='producer', csvfile='./data/digital_first.csv', authorsfile='./data/turing_fellows.csv')
+p = ProducerThread(name='producer', csvfile='./data/digital_first.csv')
 c=[]
 for i in range(4):
     c.append(ConsumerThread(name='consumer_{}'.format(i), email='d1901417@urhen.com'))

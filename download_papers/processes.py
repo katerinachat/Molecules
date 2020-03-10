@@ -7,11 +7,10 @@ import random
 import string
 import queue
 import wget
-import unpaywall
+from unpaywall import Unpaywall
+import json
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='(%(threadName)-9s) %(message)s',)
-
+logging.basicConfig(level=logging.DEBUG, format='(%(threadName)-9s) %(message)s',)
 BUF_SIZE = 10
 q = queue.Queue(BUF_SIZE)
 
@@ -21,132 +20,53 @@ def randomString(stringLength=10):
     return ''.join(random.choice(letters) for i in range(stringLength))
 
 class ProducerThread(threading.Thread):
-    def __init__(self, group=None, target=None, name=None,
-                 args=(), kwargs=None, verbose=None, csvfile=None, authorsfile=None):
+    def __init__(self, group=None, target=None, name=None, args=(), kwargs=None, verbose=None, csvfile=None):
         super(ProducerThread,self).__init__()
         self.target = target
         self.name = name
         self.csvfile = csvfile
-        self.authorsfile = authorsfile
-        self.start_iter = 0
+        
+    def is_file(self, file):
+        return os.path.isfile(file)
+    
+    def save_queue(self, queue):
+        with open('./data/queue.txt', 'w') as filehandle:
+            json.dump(basicList, filehandle)
+    
+    def load_queue(self):
+        with open('./data/queue.txt', 'r') as filehandle:
+            _list = json.load(filehandle)
+        
+        return _list
+        
+    def run(self):
+        
+        if self.is_file():
+            dois = self.load_queue()
+        else:
+            # Read in csv file
+            df = pd.read_csv('data/dig_first.csv', names=['Department', 'Name', 'Staff', 'Authors', 'Title', 'DOI'], header=0)
 
-        if os.path.isfile('./logs/last_iter.txt'):
-            with open('./logs/last_iter.txt') as f:
-                start_iter = f.read()
-                self.start_iter = int(start_iter)
-
-    def check_non_priority_queue(self):
-        downloaded_papers = os.listdir('./papers/')
-
-        with open('./logs/non_priority_authors.txt', 'r') as f:
-            last_doi = None
-            same_doi = []
-
-            for i, line in enumerate(f):
-                if '{}.pdf'.format(i) in downloaded_papers: continue
-
-                if i % 10 == 0:
-                    print('Downloading paper {}'.format(i))
-
-                _line = line.replace('\n', '').split(',')
-                doi = _line[-1]
-
-                # Check if DOI is equal to last DOI
-                if not doi == last_doi and not i == 0:
-                    with open('./logs/doi_mapping.csv', 'a') as f:
-                        f.write('%s,%s\n' % (doi, same_doi))
-                    same_doi = []
-                else:
-                    same_doi.append(i)
-                    continue
-                    
-                last_doi = doi
-
-                while(True):
-                    if not q.full():
-                        item=(doi,i)
-                        q.put(item) # Add paper to download queue
-                        logging.debug('Putting ' + str(item)  
-                              + ' : ' + str(q.qsize()) + ' doi in queue')
-                        break
-        return
-
-    def run(self):        
-        authors = {}
-
-        with open(self.authorsfile, 'r') as f:
-            for line in f:
-                line = line.replace('\n', '').split(',')
-
-                if not line[0] in authors:
-                    authors[line[0]] = [{
-                        'last name': line[0],
-                        'first name': line[1],
-                        'email': line[2],
-                        'department': line[3],
-                        'faculty': line[4]}]
-                else:
-                    authors[line[0]].append(
-                        {
-                        'last name': line[0],
-                        'first name': line[1],
-                        'email': line[2],
-                        'department': line[3],
-                        'faculty': line[4]}
-                    )
-
-        downloaded_papers = os.listdir('./papers/')
-
-        with open(self.csvfile, 'r') as f:
-            last_doi = None
-            same_doi = []
-
-            for i, line in enumerate(f):
-                if i == 0: continue
-                if i < self.start_iter: continue
-                if '{}.pdf'.format(i) in downloaded_papers: continue
-
-                if i % 10 == 0:
-                    print('Downloading paper {}'.format(i))
+            # Find unique dois
+            dois = df['DOI'].unique()
+        
+        # Add items to queue until dois is empty
+        ind = 0
+        while dois:
+            if ind % 10:
+                self.save_queue(dois)
                 
-                with open('./logs/last_iter.txt', 'w') as f:
-                    f.write(str(i))
-
-                _line = line.replace('\n', '').split(',')
-                doi = _line[-1]
-
-                # Check if DOI is equal to last DOI
-                if not doi == last_doi and not i == 0:
-                    with open('./logs/doi_mapping.csv', 'a') as f:
-                        f.write('%s,%s\n' % (doi, same_doi))
-                    same_doi = []
-                else:
-                    same_doi.append(i)
-                    continue
-                    
-                last_doi = doi
-
-                line_authors = ' '.join(_line[1:-2])
-                author_in=False
-                for last_name in authors:
-                    if last_name in line_authors:
-                        author_in=True
-                        break
-
-                if not author_in:
-                    with open('./logs/non_priority_authors.txt', 'a') as f:
-                        f.write('%s' % (line))
-                    continue
-
-                while(True):
-                    if not q.full():
-                        item=(doi,i)
-                        q.put(item) # Add paper to download queue
-                        logging.debug('Putting ' + str(item)  
-                              + ' : ' + str(q.qsize()) + ' doi in queue')
-                        break
-                    
-        self.check_non_priority_queue()
+            doi = dois.pop() # Get last doi
+        
+            while(True):
+                if not q.full():
+                    item=(doi,i)
+                    q.put(item) # Add paper to download queue
+                    logging.debug('Putting ' + str(item) + ' : ' + str(q.qsize()) + ' doi in queue')
+                    break
+            
+            ind += 1
+                        
         return
 
 class ConsumerThread(threading.Thread):
