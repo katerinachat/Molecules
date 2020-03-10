@@ -1,0 +1,34 @@
+download,failed best location,'NoneType' object is not subscriptable,10.1109/emccompo.2019.8919879
+download,failed all locations,None,10.1109/emccompo.2019.8919879
+download,failed best location,expected string or bytes-like object,10.1159/000505342
+download,failed location 0,expected string or bytes-like object,10.1159/000505342
+download,failed all locations,None,10.1159/000505342
+download,failed best location,HTTP Error 403: Forbidden,10.1177/0022042619897425
+download,failed location 0,HTTP Error 403: Forbidden,10.1177/0022042619897425
+download,failed all locations,None,10.1177/0022042619897425
+download,failed best location,'NoneType' object is not subscriptable,10.1039/c9ta13021g
+download,failed all locations,None,10.1039/c9ta13021g
+download,failed best location,HTTP Error 403: Forbidden,10.1002/ece3.5973
+download,failed location 0,HTTP Error 403: Forbidden,10.1002/ece3.5973
+download,failed location 1,expected string or bytes-like object,10.1002/ece3.5973
+download,failed location 2,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>,10.1002/ece3.5973
+download,failed location 3,expected string or bytes-like object,10.1002/ece3.5973
+download,failed best location,HTTP Error 403: Forbidden,10.1016/s2213-2600(20)30013-8
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/s2213-2600(20)30013-8
+download,failed all locations,None,10.1016/s2213-2600(20)30013-8
+download,failed best location,expected string or bytes-like object,10.1088/1742-6596/1400/7/077039
+download,failed location 0,expected string or bytes-like object,10.1088/1742-6596/1400/7/077039
+download,failed all locations,None,10.1088/1742-6596/1400/7/077039
+download,failed best location,expected string or bytes-like object,10.1088/1742-6596/1400/7/077036
+download,failed location 0,expected string or bytes-like object,10.1088/1742-6596/1400/7/077036
+download,failed all locations,None,10.1088/1742-6596/1400/7/077036
+download,failed best location,expected string or bytes-like object,10.1088/1742-6596/1383/1/012003
+download,failed location 0,expected string or bytes-like object,10.1088/1742-6596/1383/1/012003
+download,failed all locations,None,10.1088/1742-6596/1383/1/012003
+download,failed best location,'NoneType' object is not subscriptable,10.1109/ece.2019.8921173
+download,failed all locations,None,10.1109/ece.2019.8921173
+download,failed best location,'NoneType' object is not subscriptable,10.1109/ece.2019.8920848
+download,failed all locations,None,10.1109/ece.2019.8920848
+download,failed best location,expected string or bytes-like object,10.1177/1460408619895677
+download,failed location 0,expected string or bytes-like object,10.1177/1460408619895677
+download,failed all locations,None,10.1177/1460408619895677
