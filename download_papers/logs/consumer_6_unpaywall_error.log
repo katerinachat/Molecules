@@ -1,0 +1,307 @@
+download,failed location 0,HTTP Error 403: Forbidden,10.1002/ece3.5973,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ece3.5973
+download,failed location 1,expected string or bytes-like object,10.1002/ece3.5973,https://doi.org/10.1002/ece3.5973
+download,failed location 2,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>,10.1002/ece3.5973,https://aura.abdn.ac.uk/bitstream/2164/13646/1/Sadykova_etal_ece_Ecological_costs_VOR.pdf
+download,failed location 3,expected string or bytes-like object,10.1002/ece3.5973,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988555
+download,failed location 0,expected string or bytes-like object,10.1088/1742-6596/1400/7/077039,https://doi.org/10.1088/1742-6596/1400/7/077039
+download,failed location 0,expected string or bytes-like object,10.1088/1742-6596/1400/7/077036,https://doi.org/10.1088/1742-6596/1400/7/077036
+download,failed location 0,HTTP Error 403: Forbidden,10.1002/esp.4804,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/esp.4804
+download,failed location 1,expected string or bytes-like object,10.1002/esp.4804,https://doi.org/10.1002/esp.4804
+download,failed location 0,expected string or bytes-like object,10.1016/j.chemgeo.2020.119467,https://doi.org/10.1016/j.chemgeo.2020.119467
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1001/jamaophthalmol.2019.4421,https://jamanetwork.com/journals/jamaophthalmology/articlepdf/2753772/jamaophthalmology_ghorbani_mojarrad_2019_oi_190075.pdf
+download,failed location 0,expected string or bytes-like object,10.1109/access.2019.2955604,https://doi.org/10.1109/access.2019.2955604
+download,failed location 0,HTTP Error 403: Forbidden,10.1111/ijpp.12533,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ijpp.12533
+download,failed location 0,HTTP Error 403: Forbidden,10.1152/ajpcell.00360.2010,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3074622/pdf
+download,failed location 1,expected string or bytes-like object,10.1152/ajpcell.00360.2010,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3074622
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1042/bcj20190753,https://portlandpress.com/biochemj/article-pdf/477/3/671/867610/bcj-2019-0753.pdf
+download,failed location 1,expected string or bytes-like object,10.1042/bcj20190753,https://doi.org/10.1042/bcj20190753
+download,failed location 2,expected string or bytes-like object,10.1042/bcj20190753,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7015859
+download,failed location 0,HTTP Error 403: Forbidden,10.3233/JIFS-179526,https://content.iospress.com:443/download/journal-of-intelligent-and-fuzzy-systems/ifs179526?id=journal-of-intelligent-and-fuzzy-systems%2Fifs179526
+download,failed location 0,HTTP Error 403: Forbidden,10.3233/JIFS-179525,https://content.iospress.com:443/download/journal-of-intelligent-and-fuzzy-systems/ifs179525?id=journal-of-intelligent-and-fuzzy-systems%2Fifs179525
+download,failed location 0,HTTP Error 403: Forbidden,10.1080/13562517.2019.1711050,https://www.tandfonline.com/doi/pdf/10.1080/13562517.2019.1711050?needAccess=true
+download,failed location 1,expected string or bytes-like object,10.1080/13562517.2019.1711050,https://doi.org/10.1080/13562517.2019.1711050
+download,failed location 0,expected string or bytes-like object,10.1016/j.nbt.2019.10.003,https://doi.org/10.1016/j.nbt.2019.10.003
+download,failed location 0,HTTP Error 403: Forbidden,10.1161/STROKEAHA.114.006025,https://www.ahajournals.org/doi/pdf/10.1161/STROKEAHA.114.006025
+download,failed location 0,HTTP Error 403: Forbidden,10.1096/fj.201901385rr,https://www.fasebj.org/doi/pdf/10.1096/fj.201901385RR
+download,failed location 0,HTTP Error 403: Forbidden,10.1152/ajprenal.00012.2014,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4166727/pdf
+download,failed location 1,expected string or bytes-like object,10.1152/ajprenal.00012.2014,http://europepmc.org/articles/pmc4166727
+download,failed location 2,expected string or bytes-like object,10.1152/ajprenal.00012.2014,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4166727
+download,failed location 0,expected string or bytes-like object,10.1099/jgv.0.000371,https://doi.org/10.1099/jgv.0.000371
+download,failed location 0,expected string or bytes-like object,10.1016/j.sjbs.2019.12.042,https://doi.org/10.1016/j.sjbs.2019.12.042
+download,failed location 0,HTTP Error 403: Forbidden,10.1029/2019jc015519,https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2019JC015519
+download,failed location 1,expected string or bytes-like object,10.1029/2019jc015519,https://doi.org/10.1029/2019jc015519
+download,failed location 0,HTTP Error 403: Forbidden,10.1080/19932820.2019.1705633,https://www.tandfonline.com/doi/pdf/10.1080/19932820.2019.1705633?needAccess=true
+download,failed location 1,expected string or bytes-like object,10.1080/19932820.2019.1705633,https://doi.org/10.1080/19932820.2019.1705633
+download,failed location 2,expected string or bytes-like object,10.1080/19932820.2019.1705633,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6968668
+download,failed location 0,expected string or bytes-like object,10.1016/j.jksus.2019.11.043,https://doi.org/10.1016/j.jksus.2019.11.043
+download,failed location 0,expected string or bytes-like object,10.1007/s00401-018-1858-3,https://www.repository.cam.ac.uk/handle/1810/279406
+download,failed location 0,expected string or bytes-like object,10.1152/ajplung.00362.2013,https://doi.org/10.1152/ajplung.00362.2013
+download,failed location 1,HTTP Error 403: Forbidden,10.1152/ajplung.00362.2013,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281702/pdf
+download,failed location 2,expected string or bytes-like object,10.1152/ajplung.00362.2013,http://europepmc.org/articles/pmc4281702
+download,failed location 3,expected string or bytes-like object,10.1152/ajplung.00362.2013,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281702
+download,failed location 0,expected string or bytes-like object,10.21037/jtd.2019.10.21,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6940249
+download,failed location 0,HTTP Error 403: Forbidden,10.1002/gdj3.79,https://rmets.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/gdj3.79
+download,failed location 1,expected string or bytes-like object,10.1002/gdj3.79,https://doi.org/10.1002/gdj3.79
+download,failed location 2,expected string or bytes-like object,10.1002/gdj3.79,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6919402
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/nar/gkz1161,https://academic.oup.com/nar/article-pdf/48/D1/D1/31697407/gkz1161.pdf
+download,failed location 1,expected string or bytes-like object,10.1093/nar/gkz1161,https://doi.org/10.1093/nar/gkz1161
+download,failed location 2,expected string or bytes-like object,10.1093/nar/gkz1161,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6943072
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/s2214-109x(19)30526-1,http://www.thelancet.com/article/S2214109X19305261/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/s2214-109x(19)30526-1,https://doi.org/10.1016/s2214-109x(19)30526-1
+download,failed location 0,HTTP Error 403: Forbidden,10.1111/cch.12741,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/cch.12741
+download,failed location 1,expected string or bytes-like object,10.1111/cch.12741,https://doi.org/10.1111/cch.12741
+download,failed location 0,expected string or bytes-like object,10.21470/1678-9741-2018-0375,https://doi.org/10.21470/1678-9741-2018-0375
+download,failed location 1,expected string or bytes-like object,10.21470/1678-9741-2018-0375,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6713370
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/icvts/ivz135,https://academic.oup.com/icvts/article-pdf/29/4/599/30053356/ivz135.pdf
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.jtcvs.2019.06.098,http://www.jtcvs.org/article/S0022522319314989/pdf
+download,failed location 0,expected string or bytes-like object,10.1016/j.trstmh.2005.03.006,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6923142
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.juro.2016.02.1299,https://www.auajournals.org/doi/pdf/10.1016/j.juro.2016.02.1299
+download,failed location 0,expected string or bytes-like object,10.1016/j.bbadis.2017.12.006,https://doi.org/10.1016/j.bbadis.2017.12.006
+download,failed location 0,HTTP Error 403: Forbidden,10.1002/mrm.28078,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mrm.28078
+download,failed location 1,expected string or bytes-like object,10.1002/mrm.28078,https://doi.org/10.1002/mrm.28078
+download,failed location 0,expected string or bytes-like object,10.1097/MD.0000000000016720,https://doi.org/10.1097/md.0000000000016720
+download,failed location 1,expected string or bytes-like object,10.1097/MD.0000000000016720,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6775347
+download,failed location 0,expected string or bytes-like object,10.1159/000503712,https://doi.org/10.1159/000503712
+download,failed location 0,expected string or bytes-like object,10.5455/medarh.2019.73.272-275,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6853725
+download,failed location 0,expected string or bytes-like object,10.1016/j.ijso.2019.11.002,https://doi.org/10.1016/j.ijso.2019.11.002
+download,failed location 0,expected string or bytes-like object,10.30950/jcer.v15i3.1028,https://doi.org/10.30950/jcer.v15i3.1028
+download,failed location 0,HTTP Error 403: Forbidden,10.1021/acsomega.9b03685,https://pubs.acs.org/doi/pdf/10.1021/acsomega.9b03685
+download,failed location 1,expected string or bytes-like object,10.1021/acsomega.9b03685,https://doi.org/10.1021/acsomega.9b03685
+download,failed location 2,expected string or bytes-like object,10.1021/acsomega.9b03685,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6933773
+download,failed location 0,HTTP Error 403: Forbidden,10.1021/bk-2019-1326.pr001,https://pubs.acs.org/doi/pdf/10.1021/bk-2019-1326.pr001
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/foods8120692,https://www.mdpi.com/2304-8158/8/12/692/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/foods8120692,https://doi.org/10.3390/foods8120692
+download,failed location 0,expected string or bytes-like object,10.1161/hypertensionaha.119.13929,https://doi.org/10.1161/hypertensionaha.119.13929
+download,failed location 0,HTTP Error 403: Forbidden,10.1080/15685551.2019.1699727,https://www.tandfonline.com/doi/pdf/10.1080/15685551.2019.1699727?needAccess=true
+download,failed location 1,expected string or bytes-like object,10.1080/15685551.2019.1699727,https://doi.org/10.1080/15685551.2019.1699727
+download,failed location 2,expected string or bytes-like object,10.1080/15685551.2019.1699727,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6913628
+download,failed location 0,expected string or bytes-like object,10.1088/1742-6596/1332/1/012009,https://doi.org/10.1088/1742-6596/1332/1/012009
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1167/iovs.16-20608,https://iovs.arvojournals.org/arvo/content_public/journal/iovs/936282/i1552-5783-58-7-2906.pdf
+download,failed location 1,expected string or bytes-like object,10.1167/iovs.16-20608,https://doi.org/10.1167/iovs.16-20608
+download,failed location 0,expected string or bytes-like object,10.1016/j.rinp.2019.102850,https://doi.org/10.1016/j.rinp.2019.102850
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/S2542-5196(19)30243-8,http://www.thelancet.com/article/S2542519619302438/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/S2542-5196(19)30243-8,https://doi.org/10.1016/s2542-5196(19)30243-8
+download,failed location 2,expected string or bytes-like object,10.1016/S2542-5196(19)30243-8,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6926486
+download,failed location 0,expected string or bytes-like object,10.1016/j.invent.2019.100291,https://doi.org/10.1016/j.invent.2019.100291
+download,failed location 1,expected string or bytes-like object,10.1016/j.invent.2019.100291,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6926294
+download,failed location 0,HTTP Error 400: Bad Request,10.18332/ejm/115038,http://www.europeanjournalofmidwifery.eu/pdf-115038-44644?filename=Failure or progress_ The.pdf
+download,failed location 1,expected string or bytes-like object,10.18332/ejm/115038,https://doi.org/10.18332/ejm/115038
+download,failed location 0,expected string or bytes-like object,10.1016/j.trd.2019.11.014,https://doi.org/10.1016/j.trd.2019.11.014
+download,failed location 0,expected string or bytes-like object,10.1016/j.jksus.2018.01.003,https://doi.org/10.1016/j.jksus.2018.01.003
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.heliyon.2019.e02819,http://www.cell.com/article/S2405844019364795/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/j.heliyon.2019.e02819,https://doi.org/10.1016/j.heliyon.2019.e02819
+download,failed location 2,expected string or bytes-like object,10.1016/j.heliyon.2019.e02819,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6911954
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/tropicalmed4010005,https://www.mdpi.com/2414-6366/4/1/5/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/tropicalmed4010005,https://doi.org/10.3390/tropicalmed4010005
+download,failed location 2,expected string or bytes-like object,10.3390/tropicalmed4010005,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6473641
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/agronomy9120782,https://www.mdpi.com/2073-4395/9/12/782/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/agronomy9120782,https://doi.org/10.3390/agronomy9120782
+download,failed location 0,expected string or bytes-like object,10.1016/j.ijbiomac.2019.12.097,https://doi.org/10.1016/j.ijbiomac.2019.12.097
+download,failed location 0,expected string or bytes-like object,10.1214/19-ECP212,https://doi.org/10.1214/19-ecp212
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.ijrobp.2019.11.397,http://www.redjournal.org/article/S0360301619344566/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/j.ijrobp.2019.11.397,https://doi.org/10.1016/j.ijrobp.2019.11.397
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/jac/dku081,https://academic.oup.com/jac/article-pdf/69/7/1873/17429535/dku081.pdf
+download,failed location 0,expected string or bytes-like object,10.11604/pamj.2019.34.100.19388,https://doi.org/10.11604/pamj.2019.34.100.19388
+download,failed location 1,expected string or bytes-like object,10.11604/pamj.2019.34.100.19388,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6945370
+download,failed location 0,expected string or bytes-like object,10.11604/pamj.2019.34.26.19354,https://doi.org/10.11604/pamj.2019.34.26.19354
+download,failed location 1,expected string or bytes-like object,10.11604/pamj.2019.34.26.19354,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6859040
+download,failed location 0,expected string or bytes-like object,10.1016/j.compeleceng.2019.106525,https://doi.org/10.1016/j.compeleceng.2019.106525
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/e21111132,https://www.mdpi.com/1099-4300/21/11/1132/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/e21111132,https://doi.org/10.3390/e21111132
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/w11112240,https://www.mdpi.com/2073-4441/11/11/2240/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/w11112240,https://doi.org/10.3390/w11112240
+download,failed location 2,HTTP Error 403: Forbidden,10.3390/w11112240,https://res.mdpi.com/d_attachment/water/water-11-02240/article_deploy/water-11-02240.pdf
+download,failed location 0,expected string or bytes-like object,10.1590/1806-9061-2019-0993,https://doi.org/10.1590/1806-9061-2019-0993
+download,failed location 0,expected string or bytes-like object,10.1016/j.proenv.2015.01.057,https://doi.org/10.1016/j.proenv.2015.01.057
+download,failed location 0,expected string or bytes-like object,10.1016/j.cja.2014.12.031,https://doi.org/10.1016/j.cja.2014.12.031
+download,failed location 0,HTTP Error 403: Forbidden,10.1080/15685551.2016.1169375,https://www.tandfonline.com/doi/pdf/10.1080/15685551.2016.1169375?needAccess=true
+download,failed location 1,expected string or bytes-like object,10.1080/15685551.2016.1169375,https://doi.org/10.1080/15685551.2016.1169375
+download,failed location 0,HTTP Error 403: Forbidden,10.1177/0144598718754374,https://journals.sagepub.com/doi/pdf/10.1177/0144598718754374
+download,failed location 1,expected string or bytes-like object,10.1177/0144598718754374,https://doi.org/10.1177/0144598718754374
+download,failed location 0,HTTP Error 403: Forbidden,10.1029/2019gl083862,https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2019GL083862
+download,failed location 1,expected string or bytes-like object,10.1029/2019gl083862,https://doi.org/10.1029/2019gl083862
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/microorganisms7090282,https://www.mdpi.com/2076-2607/7/9/282/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/microorganisms7090282,https://doi.org/10.3390/microorganisms7090282
+download,failed location 2,expected string or bytes-like object,10.3390/microorganisms7090282,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780560
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/s0140-6736(19)32800-4,http://www.thelancet.com/article/S0140673619328004/pdf
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/d11120225,https://www.mdpi.com/1424-2818/11/12/225/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/d11120225,https://doi.org/10.3390/d11120225
+download,failed location 0,expected string or bytes-like object,10.1111/cch.12492,https://doi.org/10.1111/cch.12492
+download,failed location 0,[WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond,10.1084/jem.20050811,http://jem.rupress.org/content/202/6/751.full.pdf
+download,failed location 0,expected string or bytes-like object,10.1016/j.intimp.2019.105978,https://doi.org/10.1016/j.intimp.2019.105978
+download,failed location 0,HTTP Error 403: Forbidden,10.1515/chem-2019-0113,http://www.degruyter.com/downloadpdf/j/chem.2019.17.issue-1/chem-2019-0113/chem-2019-0113.xml
+download,failed location 1,expected string or bytes-like object,10.1515/chem-2019-0113,https://doi.org/10.1515/chem-2019-0113
+download,failed location 0,expected string or bytes-like object,10.1016/j.rgmx.2016.05.004,https://doi.org/10.1016/j.rgmx.2016.05.004
+download,failed location 0,HTTP Error 403: Forbidden,10.1515/pp-2019-0003,http://www.degruyter.com/downloadpdf/j/pp.2019.4.issue-1/pp-2019-0003/pp-2019-0003.xml
+download,failed location 1,expected string or bytes-like object,10.1515/pp-2019-0003,https://doi.org/10.1515/pp-2019-0003
+download,failed location 2,expected string or bytes-like object,10.1515/pp-2019-0003,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6545877
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.resuscitation.2019.11.015,http://www.resuscitationjournal.com/article/S0300957219307063/pdf
+download,failed location 0,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>,10.1039/c6dt02932a,https://digital.csic.es/bitstream/10261/148638/4/Building1Dlanthanide.pdf
+download,failed location 0,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>,10.1039/c8cc03929a,https://pubs.rsc.org/en/content/articlepdf/2018/cc/c8cc03929a
+download,failed location 1,expected string or bytes-like object,10.1039/c8cc03929a,https://doi.org/10.1039/c8cc03929a
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.rmed.2019.105843,http://www.resmedjournal.com/article/S0954611119303579/pdf
+download,failed location 0,expected string or bytes-like object,10.1200/JGO.19.00263,https://doi.org/10.1200/jgo.19.00263
+download,failed location 1,expected string or bytes-like object,10.1200/JGO.19.00263,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6882517
+download,failed location 0,expected string or bytes-like object,10.11604/pamj.2018.30.239.14532,https://doi.org/10.11604/pamj.2018.30.239.14532
+download,failed location 1,expected string or bytes-like object,10.11604/pamj.2018.30.239.14532,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6295308
+download,failed location 0,expected string or bytes-like object,10.1136/bmjopen-2019-032081,https://doi.org/10.1136/bmjopen-2019-032081
+download,failed location 1,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>,10.1136/bmjopen-2019-032081,https://ore.exeter.ac.uk/repository/bitstream/10871/39997/1/Richards%20et%20al%20Mixed%20Methods%20BMJ%20Open%202019.pdf
+download,failed location 0,expected string or bytes-like object,10.1016/j.phymed.2019.153133,https://doi.org/10.1016/j.phymed.2019.153133
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/inthealth/ihz083,https://academic.oup.com/inthealth/advance-article-pdf/doi/10.1093/inthealth/ihz083/31563451/ihz083.pdf
+download,failed location 1,expected string or bytes-like object,10.1093/inthealth/ihz083,https://doi.org/10.1093/inthealth/ihz083
+download,failed location 0,HTTP Error 403: Forbidden,10.1080/03007995.2019.1700947,https://www.tandfonline.com/doi/pdf/10.1080/03007995.2019.1700947?needAccess=true
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.bpj.2019.11.006,http://www.cell.com/article/S0006349519309117/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/j.bpj.2019.11.006,https://doi.org/10.1016/j.bpj.2019.11.006
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/nar/gkj402,https://academic.oup.com/nar/article-pdf/34/1/286/7127897/gkj402.pdf
+download,failed location 1,expected string or bytes-like object,10.1093/nar/gkj402,https://doi.org/10.1093/nar/gkj402
+download,failed location 0,expected string or bytes-like object,10.1111/imr.12825,https://doi.org/10.1111/imr.12825
+download,failed location 0,expected string or bytes-like object,10.1016/j.scijus.2019.10.001,https://doi.org/10.1016/j.scijus.2019.10.001
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/app9224821,https://www.mdpi.com/2076-3417/9/22/4821/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/app9224821,https://doi.org/10.3390/app9224821
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/cancers11101618,https://www.mdpi.com/2072-6694/11/10/1618/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/cancers11101618,https://doi.org/10.3390/cancers11101618
+download,failed location 2,expected string or bytes-like object,10.3390/cancers11101618,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6827047
+download,failed location 0,expected string or bytes-like object,10.1016/j.prevetmed.2019.104851,https://doi.org/10.1016/j.prevetmed.2019.104851
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/s2214-109x(19)30425-5,http://www.thelancet.com/article/S2214109X19304255/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/s2214-109x(19)30425-5,https://doi.org/10.1016/s2214-109x(19)30425-5
+download,failed location 2,expected string or bytes-like object,10.1016/s2214-109x(19)30425-5,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7024990
+download,failed location 0,expected string or bytes-like object,10.1088/1757-899x/610/1/012067,https://doi.org/10.1088/1757-899x/610/1/012067
+download,failed location 0,expected string or bytes-like object,10.1016/j.sciaf.2019.e00218,https://doi.org/10.1016/j.sciaf.2019.e00218
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/app9224816,https://www.mdpi.com/2076-3417/9/22/4816/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/app9224816,https://doi.org/10.3390/app9224816
+download,failed location 0,expected string or bytes-like object,10.1016/j.seta.2019.100568,https://doi.org/10.1016/j.seta.2019.100568
+download,failed location 0,expected string or bytes-like object,10.1002/wat2.1209,https://doi.org/10.1002/wat2.1209
+download,failed location 0,HTTP Error 403: Forbidden,10.1111/mec.15295,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/mec.15295
+download,failed location 1,expected string or bytes-like object,10.1111/mec.15295,https://doi.org/10.1111/mec.15295
+download,failed location 2,expected string or bytes-like object,10.1111/mec.15295,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6973153
+download,failed location 0,HTTP Error 403: Forbidden,10.1080/01652176.2019.1682714,https://www.tandfonline.com/doi/pdf/10.1080/01652176.2019.1682714?needAccess=true
+download,failed location 1,expected string or bytes-like object,10.1080/01652176.2019.1682714,https://doi.org/10.1080/01652176.2019.1682714
+download,failed location 0,HTTP Error 403: Forbidden,10.1002/bse.2185,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/bse.2185
+download,failed location 0,HTTP Error 403: Forbidden,10.1080/16583655.2019.1668101,https://www.tandfonline.com/doi/pdf/10.1080/16583655.2019.1668101?needAccess=true
+download,failed location 1,expected string or bytes-like object,10.1080/16583655.2019.1668101,https://doi.org/10.1080/16583655.2019.1668101
+download,failed location 0,HTTP Error 503: Service Unavailable,10.1088/1742-6596/375/1/022001,http://iopscience.iop.org/article/10.1088/1742-6596/375/1/022001/pdf
+download,failed location 0,HTTP Error 403: Forbidden,10.1021/acs.chemmater.9b03230,https://pubs.acs.org/doi/pdf/10.1021/acs.chemmater.9b03230
+download,failed location 1,expected string or bytes-like object,10.1021/acs.chemmater.9b03230,https://doi.org/10.1021/acs.chemmater.9b03230
+download,failed location 2,expected string or bytes-like object,10.1021/acs.chemmater.9b03230,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7011735
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/su11205643,https://www.mdpi.com/2071-1050/11/20/5643/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/su11205643,https://doi.org/10.3390/su11205643
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/su11216083,https://www.mdpi.com/2071-1050/11/21/6083/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/su11216083,https://doi.org/10.3390/su11216083
+download,failed location 0,expected string or bytes-like object,10.21829/myb.2019.2521799,https://doi.org/10.21829/myb.2019.2521799
+download,failed location 0,expected string or bytes-like object,10.1016/j.jmr.2019.106646,https://doi.org/10.1016/j.jmr.2019.106646
+download,failed location 0,HTTP Error 403: Forbidden,10.1111/jav.02156,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jav.02156
+download,failed location 1,expected string or bytes-like object,10.1111/jav.02156,https://doi.org/10.1111/jav.02156
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/chromsci/bmu005,https://academic.oup.com/chromsci/article-pdf/53/1/24/918293/bmu005.pdf
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/chromsci/bmu052,https://academic.oup.com/chromsci/article-pdf/53/2/274/872940/bmu052.pdf
+download,failed location 0,HTTP Error 403: Forbidden,10.1021/jm500694p,https://pubs.acs.org/doi/pdf/10.1021/jm500694p
+download,failed location 1,expected string or bytes-like object,10.1021/jm500694p,https://doi.org/10.1021/jm500694p
+download,failed location 0,expected string or bytes-like object,10.1371/journal.pone.0124354,https://doi.org/10.1371/journal.pone.0124354
+download,failed location 0,HTTP Error 403: Forbidden,10.1634/theoncologist.2015-0065,https://theoncologist.onlinelibrary.wiley.com/doi/pdfdirect/10.1634/theoncologist.2015-0065
+download,failed location 0,HTTP Error 403: Forbidden,10.1111/jcmm.12815,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jcmm.12815
+download,failed location 1,expected string or bytes-like object,10.1111/jcmm.12815,https://doi.org/10.1111/jcmm.12815
+download,failed location 0,expected string or bytes-like object,10.1159/000443101,https://doi.org/10.1159/000443101
+download,failed location 0,HTTP Error 403: Forbidden,10.1111/bcp.12991,https://bpspubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bcp.12991
+download,failed location 0,expected string or bytes-like object,10.1111/psyp.12669,https://doi.org/10.1111/psyp.12669
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.jtho.2016.08.142,http://www.jto.org/article/S1556086416309273/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/j.jtho.2016.08.142,https://doi.org/10.1016/j.jtho.2016.08.142
+download,failed location 0,HTTP Error 403: Forbidden,10.1080/10717544.2016.1230902,https://www.tandfonline.com/doi/pdf/10.1080/10717544.2016.1230902?needAccess=true
+download,failed location 1,expected string or bytes-like object,10.1080/10717544.2016.1230902,https://doi.org/10.1080/10717544.2016.1230902
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1167/iovs.16-21163,https://iovs.arvojournals.org/arvo/content_public/journal/iovs/936100/i1552-5783-58-3-1478.pdf
+download,failed location 1,expected string or bytes-like object,10.1167/iovs.16-21163,https://doi.org/10.1167/iovs.16-21163
+download,failed location 0,expected string or bytes-like object,10.1097/MD.0000000000007081,https://doi.org/10.1097/md.0000000000007081
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1167/iovs.17-21445,https://iovs.arvojournals.org/arvo/content_public/journal/iovs/936622/i1552-5783-58-14-6123.pdf
+download,failed location 1,expected string or bytes-like object,10.1167/iovs.17-21445,https://doi.org/10.1167/iovs.17-21445
+download,failed location 0,expected string or bytes-like object,10.1097/MD.0000000000008238,https://doi.org/10.1097/md.0000000000008238
+download,failed location 0,HTTP Error 403: Forbidden,10.1021/acs.jmedchem.8b00582,https://pubs.acs.org/doi/pdf/10.1021/acs.jmedchem.8b00582
+download,failed location 1,expected string or bytes-like object,10.1021/acs.jmedchem.8b00582,https://doi.org/10.1021/acs.jmedchem.8b00582
+download,failed location 0,expected string or bytes-like object,10.4103/0973-1482.188294,https://doi.org/10.4103/0973-1482.188294
+download,failed location 0,expected string or bytes-like object,10.1016/j.nicl.2018.06.003,https://doi.org/10.1016/j.nicl.2018.06.003
+download,failed location 1,expected string or bytes-like object,10.1016/j.nicl.2018.06.003,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6031869
+download,failed location 0,expected string or bytes-like object,10.21037/atm.2018.05.18,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6035997
+download,failed location 1,HTTP Error 404: Not Found,10.21037/atm.2018.05.18,http://pdfs.semanticscholar.org/3fa2/05bc4c21c73f1019c37bedbdf85939826368.pdf
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/abbs/gmy094,https://academic.oup.com/abbs/article-pdf/50/11/1150/26608949/gmy094.pdf
+download,failed location 0,expected string or bytes-like object,10.21037/jtd.2018.07.94,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6106006
+download,failed location 0,expected string or bytes-like object,10.12659/MSM.911534,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6262903
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/abbs/gmy145,https://academic.oup.com/abbs/article-pdf/51/1/1/27579502/gmy145.pdf
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/gigascience/giy151,https://academic.oup.com/gigascience/article-pdf/7/12/giy151/27042173/giy151.pdf
+download,failed location 1,expected string or bytes-like object,10.1093/gigascience/giy151,https://doi.org/10.1093/gigascience/giy151
+download,failed location 0,expected string or bytes-like object,10.21037/jtd.2018.11.31,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6344772
+download,failed location 1,HTTP Error 404: Not Found,10.21037/jtd.2018.11.31,http://pdfs.semanticscholar.org/97e8/5e2b38f39b61d2123199d24a6211b690eba8.pdf
+download,failed location 0,expected string or bytes-like object,10.1097/MD.0000000000014920,https://doi.org/10.1097/md.0000000000014920
+download,failed location 1,expected string or bytes-like object,10.1097/MD.0000000000014920,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6709285
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/ani9030110,https://www.mdpi.com/2076-2615/9/3/110/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/ani9030110,https://doi.org/10.3390/ani9030110
+download,failed location 2,expected string or bytes-like object,10.3390/ani9030110,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6466078
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.jfda.2018.11.008,http://www.jfda-online.com/article/S1021949818301790/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/j.jfda.2018.11.008,https://doi.org/10.1016/j.jfda.2018.11.008
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1042/BSR20190789,https://portlandpress.com/bioscirep/article-pdf/39/6/BSR20190789/846691/bsr-2019-0789.pdf
+download,failed location 1,expected string or bytes-like object,10.1042/BSR20190789,https://doi.org/10.1042/bsr20190789
+download,failed location 2,expected string or bytes-like object,10.1042/BSR20190789,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6591570
+download,failed location 0,expected string or bytes-like object,10.1084/jem.20181952,https://doi.org/10.1084/jem.20181952
+download,failed location 0,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1045)>,10.1016/j.jcp.2015.03.068,https://manuscript.elsevier.com/S0021999115002405/pdf/S0021999115002405.pdf
+download,failed location 0,expected string or bytes-like object,10.1016/j.dib.2019.104234,https://doi.org/10.1016/j.dib.2019.104234
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/ijms20164063,https://www.mdpi.com/1422-0067/20/16/4063/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/ijms20164063,https://doi.org/10.3390/ijms20164063
+download,failed location 2,expected string or bytes-like object,10.3390/ijms20164063,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6720712
+download,failed location 0,expected string or bytes-like object,10.1109/JPHOT.2016.2602335,https://doi.org/10.1109/jphot.2016.2602335
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/S2214-109X(16)30308-4,http://www.thelancet.com/article/S2214109X16303084/pdf
+download,failed location 1,expected string or bytes-like object,10.1016/S2214-109X(16)30308-4,https://doi.org/10.1016/s2214-109x(16)30308-4
+download,failed location 0,expected string or bytes-like object,10.1109/ACCESS.2018.2885024,https://doi.org/10.1109/access.2018.2885024
+download,failed location 0,expected string or bytes-like object,10.1016/b978-0-7020-6285-8.00129-5,https://doi.org/10.1016/b978-0-7020-6285-8.00129-5
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/rheumatology/key075.057,https://academic.oup.com/rheumatology/article-pdf/57/suppl_3/key075.057/24767572/key075.057.pdf
+download,failed location 0,HTTP Error 503: Service Unavailable,10.1088/1742-6596/119/3/032023,http://iopscience.iop.org/article/10.1088/1742-6596/119/3/032023/pdf
+download,failed location 0,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>,10.1007/s10841-015-9831-0,http://discovery.ucl.ac.uk/1476688/3/Axmacher_ZouYi%20et%20al%20JICO.pdf
+download,failed location 1,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>,10.1007/s10841-015-9831-0,https://discovery.ucl.ac.uk/id/eprint/1476688/3/Axmacher_ZouYi%20et%20al%20JICO.pdf
+download,failed location 0,expected string or bytes-like object,10.1097/HS9.0000000000000049,https://doi.org/10.1097/hs9.0000000000000049
+download,failed location 1,expected string or bytes-like object,10.1097/HS9.0000000000000049,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6745986
+download,failed location 0,HTTP Error 503: Service Unavailable,10.1088/1755-1315/329/1/012007,https://iopscience.iop.org/article/10.1088/1755-1315/329/1/012007/pdf
+download,failed location 1,expected string or bytes-like object,10.1088/1755-1315/329/1/012007,https://doi.org/10.1088/1755-1315/329/1/012007
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1016/0378-1097(81)90091-4,https://academic.oup.com/femsle/article-pdf/11/2-3/111/19085838/11-2-3-111.pdf
+download,failed location 0,expected string or bytes-like object,10.1016/j.pisc.2015.06.004,https://doi.org/10.1016/j.pisc.2015.06.004
+download,failed location 0,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1045)>,10.1039/c9sc02832c,https://pubs.rsc.org/en/content/articlepdf/2019/sc/c9sc02832c
+download,failed location 1,expected string or bytes-like object,10.1039/c9sc02832c,https://doi.org/10.1039/c9sc02832c
+download,failed location 2,expected string or bytes-like object,10.1039/c9sc02832c,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6991173
+download,failed location 0,expected string or bytes-like object,10.2196/preprints.8214,https://doi.org/10.2196/preprints.8214
+download,failed location 0,expected string or bytes-like object,10.14705/rpnet.2019.32.897,https://doi.org/10.14705/rpnet.2019.32.897
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/toxins11110642,https://www.mdpi.com/2072-6651/11/11/642/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/toxins11110642,https://doi.org/10.3390/toxins11110642
+download,failed location 2,expected string or bytes-like object,10.3390/toxins11110642,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6891376
+download,failed location 0,expected string or bytes-like object,10.1016/j.comppsych.2019.152128,https://doi.org/10.1016/j.comppsych.2019.152128
+download,failed location 1,expected string or bytes-like object,10.1016/j.comppsych.2019.152128,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6945113
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/jnci/djv100,https://academic.oup.com/jnci/article-pdf/107/5/djv100/17314945/djv100.pdf
+download,failed location 0,expected string or bytes-like object,10.1021/acsabm.8b00778,https://www.osti.gov/biblio/1497853
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.ijrobp.2019.06.490,http://www.redjournal.org/article/S0360301619313252/pdf
+download,failed location 0,expected string or bytes-like object,10.1016/j.jacc.2019.08.457,https://doi.org/10.1016/j.jacc.2019.08.457
+download,failed location 0,HTTP Error 403: Forbidden,10.1111/1467-923x.12769,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-923X.12769
+download,failed location 1,expected string or bytes-like object,10.1111/1467-923x.12769,https://doi.org/10.1111/1467-923x.12769
+download,failed location 0,HTTP Error 403: Forbidden,10.1016/j.jmir.2019.09.003,http://www.jmirs.org/article/S1939865419305028/pdf
+download,failed location 0,HTTP Error 403: Forbidden,10.1002/jcla.23048,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcla.23048
+download,failed location 1,expected string or bytes-like object,10.1002/jcla.23048,https://doi.org/10.1002/jcla.23048
+download,failed location 2,expected string or bytes-like object,10.1002/jcla.23048,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7031596
+download,failed location 0,HTTP Error 403: Forbidden,10.1177/1534735419878505,https://journals.sagepub.com/doi/pdf/10.1177/1534735419878505
+download,failed location 1,expected string or bytes-like object,10.1177/1534735419878505,https://doi.org/10.1177/1534735419878505
+download,failed location 2,expected string or bytes-like object,10.1177/1534735419878505,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6767725
+download,failed location 0,expected string or bytes-like object,10.15252/embr.201745428,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5709766
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/mnras/stz399,https://academic.oup.com/mnras/article-pdf/485/1/396/28647230/stz399.pdf
+download,failed location 1,expected string or bytes-like object,10.1093/mnras/stz399,https://doi.org/10.1093/mnras/stz399
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/dnares/dsy008,https://academic.oup.com/dnaresearch/article-pdf/25/4/361/25501718/dsy008.pdf
+download,failed location 1,expected string or bytes-like object,10.1093/dnares/dsy008,https://doi.org/10.1093/dnares/dsy008
+download,failed location 2,expected string or bytes-like object,10.1093/dnares/dsy008,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6105106
+download,failed location 0,HTTP Error 403: Forbidden,10.20452/pamw.14996,https://www.mp.pl/paim/en/node/14996/pdf
+download,failed location 1,expected string or bytes-like object,10.20452/pamw.14996,https://doi.org/10.20452/pamw.14996
+download,failed location 0,expected string or bytes-like object,10.1088/1742-6596/1303/1/012005,https://doi.org/10.1088/1742-6596/1303/1/012005
+download,failed location 0,HTTP Error 403: Forbidden,10.1177/0333102419861204,https://journals.sagepub.com/doi/pdf/10.1177/0333102419861204
+download,failed location 0,HTTP Error 403: Forbidden,10.1530/EJE-19-0316,https://eje.bioscientifica.com/downloadpdf/journals/eje/181/3/EJE-19-0316.pdf
+download,failed location 0,expected string or bytes-like object,10.4103/nmj.NMJ_93_18,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6737797
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/ma12183000,https://www.mdpi.com/1996-1944/12/18/3000/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/ma12183000,https://doi.org/10.3390/ma12183000
+download,failed location 2,expected string or bytes-like object,10.3390/ma12183000,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6766315
+download,failed location 0,expected string or bytes-like object,10.1016/j.spl.2019.108624,https://doi.org/10.1016/j.spl.2019.108624
+download,failed location 0,expected string or bytes-like object,10.1016/j.agsy.2017.02.007,https://doi.org/10.1016/j.agsy.2017.02.007
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1111/j.1365-2966.2005.08552.x,https://academic.oup.com/mnras/article-pdf/357/1/1/3464231/357-1-1.pdf
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1046/j.1365-8711.2002.05254.x,https://academic.oup.com/mnras/article-pdf/331/4/975/3793529/331-4-975.pdf
+download,failed location 0,[WinError 10054] An existing connection was forcibly closed by the remote host,10.1093/ageing/31.suppl_2.24,https://academic.oup.com/ageing/article-pdf/31/suppl_2/24/86238/310024.pdf
+download,failed location 0,HTTP Error 403: Forbidden,10.1021/acs.jced.6b00718,https://pubs.acs.org/doi/pdf/10.1021/acs.jced.6b00718
+download,failed location 1,expected string or bytes-like object,10.1021/acs.jced.6b00718,https://doi.org/10.1021/acs.jced.6b00718
+download,failed location 0,HTTP Error 403: Forbidden,10.3390/w9080619,https://www.mdpi.com/2073-4441/9/8/619/pdf
+download,failed location 1,expected string or bytes-like object,10.3390/w9080619,https://doi.org/10.3390/w9080619
+download,failed location 0,expected string or bytes-like object,10.1088/1755-1315/175/1/012208,https://doi.org/10.1088/1755-1315/175/1/012208
