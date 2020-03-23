@@ -82,7 +82,7 @@ class ConsumerThread(threading.Thread):
 
     def record_doi_map(self, doi, key):
         with open('./logs/{}_doi_map.csv'.format(self.name), 'a') as f:
-            f.write('{},{}\n'.format(doi, key))
+            f.write('{},{}\n'.format(key, doi))
 
     def run(self):
         while True:
