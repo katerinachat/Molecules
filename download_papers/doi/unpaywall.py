@@ -33,7 +33,7 @@ class Unpaywall:
 
             if not response.status_code == 200:
                 # print('[ERROR] Response code %s' % (response.status_code))
-                record_error('request', 'invalid status code', response.status_code, doi)
+                self.record_error('request', 'invalid status code', response.status_code, doi)
                 return 0
             
             return response.json()
