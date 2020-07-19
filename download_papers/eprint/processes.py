@@ -68,16 +68,6 @@ class ProducerThread(threading.Thread):
         
     def is_file(self, file):
         return os.path.isfile(file)
-    
-    def save_queue(self, queue):
-        with open('./logs/queue.txt', 'w') as f:
-            json.dump(queue, f)
-    
-    def load_queue(self):
-        with open('./logs/queue.txt', 'r') as f:
-            _list = json.load(f)
-        
-        return _list
         
     def run(self):
         df = pd.read_csv(self.csv_file)
