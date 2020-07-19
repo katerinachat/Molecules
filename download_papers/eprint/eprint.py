@@ -33,21 +33,22 @@ class Eprint():
             
             if not response.status_code == 200:
                 print('[ERROR] Response code %s' % (response.status_code))
-                return 0
+                return 0, response.status_code
             
-            return response.json()
+            return response.json(), None
 
         except Exception as e:
             print("Error when searching for query %s:\n%s" % (url, e))
+            return 0, e
 
-        return 0
+        return 0, None
     
     def download_paper(self, eprint_id,
                        department):
-        response = self.search_paper(eprint_id)
+        response, err = self.search_paper(eprint_id)
         
         if response == 0:
-            return 0
+            return 0, err
 
         file_dir = '{}/{}'.format(self.paper_dir,
                                   department)
@@ -55,14 +56,17 @@ class Eprint():
         if not os.path.isdir(file_dir):
             os.makedirs(file_dir)
 
-        if 'documents' in response.keys():
-            for document in response['documents']:
-                for _file in document['files']:
-                    if _file['mime_type'] == 'application/pdf':
-                        pdf_response = requests.get(_file['uri'], stream=True)
-                        if not pdf_response.status_code == 200:
-                            continue
-                        with open('{}/{}.pdf'.format(file_dir, eprint_id), 'wb') as f:
-                            f.write(pdf_response.content)
-                        return 1
-        return 0
+        try:
+            if 'documents' in response.keys():
+                for document in response['documents']:
+                    for _file in document['files']:
+                        if _file['mime_type'] == 'application/pdf':
+                            pdf_response = requests.get(_file['uri'], stream=True)
+                            if not pdf_response.status_code == 200:
+                                continue
+                            with open('{}/{}.pdf'.format(file_dir, eprint_id), 'wb') as f:
+                                f.write(pdf_response.content)
+                            return 1, err
+        except Exception as e:
+            return 0, e
+        return 0, err
