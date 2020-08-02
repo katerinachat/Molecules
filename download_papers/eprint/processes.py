@@ -19,18 +19,21 @@ CWD = os.getcwd()
 
 
 def read_data(directory):
-    temp_dfs = []
-    for filename in os.listdir('{}'.format(directory)):
-        if 'csv' in filename:
-            temp_df = pd.read_csv('{}/{}'.format(directory, filename),
-                                names=['eprint', 'doi', 'department', 'response'],
-                                sep='\t')
-            temp_dfs.append(temp_df)
-        else:
-            continue
-    print('{}: Loaded {} CSV files'.format(directory, len(temp_dfs)))
-    df = pd.concat(temp_dfs, axis=0, ignore_index=True)
-    return df
+    try:
+        temp_dfs = []
+        for filename in os.listdir('{}'.format(directory)):
+            if 'csv' in filename:
+                temp_df = pd.read_csv('{}/{}'.format(directory, filename),
+                                    names=['eprint', 'doi', 'department', 'response'],
+                                    sep='\t')
+                temp_dfs.append(temp_df)
+            else:
+                continue
+        print('{}: Loaded {} CSV files'.format(directory, len(temp_dfs)))
+        df = pd.concat(temp_dfs, axis=0, ignore_index=True)
+        return df
+    except:
+        return None
 
 
 def record_error(eprint_id, worker, doi, department, error):
@@ -68,24 +71,42 @@ class ProducerThread(threading.Thread):
         
     def is_file(self, file):
         return os.path.isfile(file)
+    
+    def save_queue(self, queue):
+        with open('./logs/queue.txt', 'w') as f:
+            json.dump(queue, f)
+    
+    def load_queue(self):
+        with open('./logs/queue.txt', 'r') as f:
+            _list = json.load(f)
+        
+        return _list
         
     def run(self):
-        df = pd.read_csv(self.csv_file)
+        if "eprint_errors" in self.csv_file:
+            df = pd.read_csv(self.csv_file, sep='\t')
+        else:
+            df = pd.read_csv(self.csv_file)
         print("Read in {} records".format(df.shape[0]))
 
         df = df.drop_duplicates('Publication Id')
         print("There are {} unique records".format(df.shape[0]))
 
         logs = read_data("{}/logs".format(CWD))
-        print("Loaded {} records from logs".format(logs.shape[0]))
+        if logs is not None:
+            print("Loaded {} records from logs".format(logs.shape[0]))
 
-        downloaded_papers = logs['eprint'].to_list()
-        to_download = df[~df['Publication Id'].isin(downloaded_papers)]
-        print("There are {} papers left to download".format(to_download.shape[0]))
+            downloaded_papers = logs['eprint'].to_list()
+            to_download = df[~df['Publication Id'].isin(downloaded_papers)]
+            print("There are {} papers left to download".format(to_download.shape[0]))
 
-        papers = list(zip(to_download['Publication Id'],
-                          to_download['Department'],
-                          to_download['DOI']))
+            papers = list(zip(to_download['Publication Id'],
+                            to_download['Department'],
+                            to_download['DOI']))
+        else:
+            papers = list(zip(df['Publication Id'],
+                              df['Department'],
+                              df['DOI']))
 
         while len(papers) > 0:
             paper = papers.pop()

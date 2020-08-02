@@ -2,7 +2,7 @@ from processes import *
 
 
 def main():
-    p = ProducerThread(name='producer', csv_file='C:/Users/sgmcart3/Documents/PhD Code/Digital_First/download_papers/data/dig_first.csv')
+    p = ProducerThread(name='producer', csv_file='./data/eprint_errors.csv')
     c=[]
     for i in range(4):
         c.append(ConsumerThread(name='consumer_{}'.format(i), email='me@me.com'))

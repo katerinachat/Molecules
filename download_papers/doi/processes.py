@@ -11,24 +11,49 @@ import pandas as pd
 import uuid
 from unpaywall import Unpaywall
 
+
 logging.basicConfig(level=logging.DEBUG, format='(%(threadName)-9s) %(message)s',)
 BUF_SIZE = 10
 q = queue.Queue(BUF_SIZE)
+CWD = os.getcwd()
 
 
 def read_data(directory):
-    temp_dfs = []
-    for filename in os.listdir('{}'.format(directory)):
-        if 'csv' in filename:
-            temp_df = pd.read_csv('{}/{}'.format(directory, filename),
-                                names=['eprint', 'doi', 'department', 'response'],
-                                sep='\t')
-            temp_dfs.append(temp_df)
-        else:
-            continue
-    print('{}: Loaded {} CSV files'.format(directory, len(temp_dfs)))
-    df = pd.concat(temp_dfs, axis=0, ignore_index=True)
-    return df
+    try:
+        temp_dfs = []
+        for filename in os.listdir('{}'.format(directory)):
+            if 'csv' in filename:
+                temp_df = pd.read_csv('{}/{}'.format(directory, filename),
+                                    names=['eprint', 'doi', 'department', 'response'],
+                                    sep='\t')
+                temp_dfs.append(temp_df)
+            else:
+                continue
+        print('{}: Loaded {} CSV files'.format(directory, len(temp_dfs)))
+        df = pd.concat(temp_dfs, axis=0, ignore_index=True)
+        return df
+    except:
+        return None
+
+
+def record_error(eprint_id, worker, doi, department, error):
+    if not os.path.isdir('{}/logs'.format(CWD)):
+        os.mkdir('{}/logs'.format(CWD))
+    with open('./logs/{}_error.csv'.format(worker), 'a') as f:
+        f.write('{}\t{}\t{}\t{}\n'.format(eprint_id,
+                                          doi,
+                                          department,
+                                          error))
+
+
+def record_success(eprint_id, worker, doi, department, err):
+    if not os.path.isdir('{}/logs'.format(CWD)):
+        os.mkdir('{}/logs'.format(CWD))
+    with open('./logs/{}_success.csv'.format(worker), 'a') as f:
+        f.write('{}\t{}\t{}\t{}\n'.format(eprint_id,
+                                          doi,
+                                          department,
+                                          err))
 
 
 def randomString(stringLength=10):
@@ -48,22 +73,46 @@ class ProducerThread(threading.Thread):
         return os.path.isfile(file)
         
     def run(self):
-        df = pd.read_csv(self.csv_file)
-        print("Read in {} records".format(df.shape[0]))
-
-        df = df.drop_duplicates('Publication Id')
-        print("There are {} unique records".format(df.shape[0]))
-
+        if "eprint_errors" in self.csv_file:
+            df = pd.read_csv(self.csv_file, sep='\t')
+            print("Read in {} records".format(df.shape[0]))
+            df = df.drop_duplicates('doi')
+            print("There are {} unique records".format(df.shape[0]))
+        else:
+            df = pd.read_csv(self.csv_file)
+            print("Read in {} records".format(df.shape[0]))
+            df = df.drop_duplicates('Publication Id')
+            print("There are {} unique records".format(df.shape[0]))
+        
         logs = read_data("{}/logs".format(CWD))
-        print("Loaded {} records from logs".format(logs.shape[0]))
+        if logs is not None:
+            print("Loaded {} records from logs".format(logs.shape[0]))
 
-        downloaded_papers = logs['eprint'].to_list()
-        to_download = df[~df['Publication Id'].isin(downloaded_papers)]
-        print("There are {} papers left to download".format(to_download.shape[0]))
+            downloaded_papers = logs['eprint'].to_list()
 
-        papers = list(zip(to_download['Publication Id'],
-                          to_download['Department'],
-                          to_download['DOI']))
+            if "eprint_errors" in self.csv_file:
+                to_download = df[~df['eprint'].isin(downloaded_papers)]
+                print("There are {} papers left to download".format(to_download.shape[0]))
+
+                papers = list(zip(to_download['eprint'],
+                                to_download['department'],
+                                to_download['doi']))
+            else:
+                to_download = df[~df['Publication Id'].isin(downloaded_papers)]
+                print("There are {} papers left to download".format(to_download.shape[0]))
+
+                papers = list(zip(to_download['Publication Id'],
+                                to_download['Department'],
+                                to_download['DOI']))
+        else:
+            if "eprint_errors" in self.csv_file:
+                papers = list(zip(df['eprint'],
+                                df['department'],
+                                df['doi']))            
+            else:
+                papers = list(zip(df['Publication Id'],
+                                df['Department'],
+                                df['DOI']))
 
         while len(papers) > 0:
             paper = papers.pop()
@@ -78,7 +127,6 @@ class ProducerThread(threading.Thread):
                     # logging.debug('Putting ' + str(item) + ' : ' + str(q.qsize()) + ' doi in queue')
                     break                        
         return
-
 
 class ConsumerThread(threading.Thread):
     def __init__(self, group=None, target=None, name=None,
@@ -101,15 +149,12 @@ class ConsumerThread(threading.Thread):
                 eprint_id = item[0]
                 department = item[1]
                 doi = item[2]
-
-                logging.debug('Downloading ' + str(item) + ' : ' + str(q.qsize()) + ' items in queue')
-
-                key = str(uuid.uuid1()).replace('-', '') # Create a random unique key
-                status = self.unpaywall.download_paper(doi, key)
-                # If successful, append record to csv
+                logging.debug('Downloading ' + str(eprint_id) + ' : ' + str(q.qsize()) + ' items in queue')
+                status, error = self.unpaywall.download_paper(doi, department, eprint_id)
                 if status == 1:
-                    self.record_doi_map(doi, key)
-
+                    record_success(eprint_id, self.name, doi, department, error)
+                else:
+                    record_error(eprint_id, self.name, doi, department, error)
                 time.sleep(random.random())
         return
 

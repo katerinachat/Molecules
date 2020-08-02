@@ -34,31 +34,43 @@ class Unpaywall:
             if not response.status_code == 200:
                 # print('[ERROR] Response code %s' % (response.status_code))
                 self.record_error('request', 'invalid status code', response.status_code, doi)
-                return 0
+                return 0, response.status_code
             
-            return response.json()
+            return response.json(), None
 
         except Exception as e:
             # print("[ERROR] %s" % (e))
             self.record_error('request', 'request exception', e, doi)
-            return 0
+            return 0, e
+        
+        return 0, None
 
-    def download_paper(self, doi, name):
-        response = self.request_doi(doi)
+    def download_paper(self, doi, department, name):
+        response, err = self.request_doi(doi)
 
         if response == 0: # Request failed
-            return 0
-        
+            return 0, err
+
+        file_dir = '{}/{}'.format(self.paper_dir,
+                                  department)
+
+        if not os.path.isdir(file_dir):
+            os.makedirs(file_dir)
+
         # Try best location
         if 'best_oa_location' in response.keys():
             try:
                 pdf_url = response['best_oa_location']['url_for_pdf']
-                urllib.request.urlretrieve(pdf_url, filename='{}/{}.pdf'.format(self.paper_dir, name))
+                urllib.request.urlretrieve(pdf_url, filename='{}/{}/{}.pdf'.format(self.paper_dir,
+                                                                                   department,
+                                                                                   name))
             except Exception as e:
-                self.record_error('download', 'failed best location', e, doi)
+                return 0, e
                 
-            if self.is_file('{}/{}.pdf'.format(self.paper_dir, name)):
-                return 1
+            if self.is_file('{}/{}/{}.pdf'.format(self.paper_dir,
+                                                  department,
+                                                  name)):
+                return 1, None
 
         # If best location didn't work, try alternative locations
         if 'oa_locations' in response.keys():
@@ -67,19 +79,24 @@ class Unpaywall:
             for i, location in enumerate(oa_locations):
                 try:
                     pdf_url = location['url_for_pdf']
-                    urllib.request.urlretrieve(pdf_url, filename='{}/{}.pdf'.format(self.paper_dir, name))
+                    urllib.request.urlretrieve(pdf_url, filename='{}/{}/{}.pdf'.format(self.paper_dir,
+                                                                                       department,
+                                                                                       name))
                     
-                    if self.is_file('{}/{}.pdf'.format(self.paper_dir, name)):
-                        return 1
+                    if self.is_file('{}/{}/{}.pdf'.format(self.paper_dir,
+                                                          department,
+                                                          name)):
+                        return 1, None
                     
                 except Exception as e:
-                    self.record_error('download', 'failed location {}'.format(i), e, doi)
                     continue
 
         else:
-            self.record_error('download', 'no download locations', None, doi)
-            return 0
+            return 0, "No location"
 
-        if not self.is_file('{}/{}.pdf'.format(self.paper_dir, name)):
-            self.record_error('download', 'failed all locations', None, doi)
-            return 0
+        if not self.is_file('{}/{}/{}.pdf'.format(self.paper_dir,
+                                                  department,
+                                                  name)):
+            return 0, "Failed to download"
+        
+        return 0, None
